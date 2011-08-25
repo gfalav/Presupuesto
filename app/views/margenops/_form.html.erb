@@ -1,0 +1,65 @@
+<%= form_for(@margenop) do |f| %>
+  <% if @margenop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@margenop.errors.count, "error") %> prohibited this margenop from being saved:</h2>
+
+      <ul>
+      <% @margenop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :version %><br />
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :empresa %><br />
+    <%= f.text_field :empresa %>
+  </div>
+  <div class="field">
+    <%= f.label :tarifa %><br />
+    <%= f.text_field :tarifa %>
+  </div>
+  <div class="field">
+    <%= f.label :periodo %><br />
+    <%= f.text_field :periodo %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br />
+    <%= f.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= f.label :concepto %><br />
+    <%= f.text_field :concepto %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidad %><br />
+    <%= f.text_field :cantidad %>
+  </div>
+  <div class="field">
+    <%= f.label :consumo_vta %><br />
+    <%= f.text_field :consumo_vta %>
+  </div>
+  <div class="field">
+    <%= f.label :consumo_cpa %><br />
+    <%= f.text_field :consumo_cpa %>
+  </div>
+  <div class="field">
+    <%= f.label :importe_vta %><br />
+    <%= f.text_field :importe_vta %>
+  </div>
+  <div class="field">
+    <%= f.label :importe_cpa %><br />
+    <%= f.text_field :importe_cpa %>
+  </div>
+  <div class="field">
+    <%= f.label :importe_mgn %><br />
+    <%= f.text_field :importe_mgn %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

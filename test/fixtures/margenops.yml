@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  version: 1
+  empresa: MyString
+  tarifa: MyString
+  periodo: 1
+  estado: MyString
+  concepto: MyString
+  cantidad: 1
+  consumo_vta: 9.99
+  consumo_cpa: 9.99
+  importe_vta: 9.99
+  importe_cpa: 9.99
+  importe_mgn: 9.99
+
+two:
+  version: 1
+  empresa: MyString
+  tarifa: MyString
+  periodo: 1
+  estado: MyString
+  concepto: MyString
+  cantidad: 1
+  consumo_vta: 9.99
+  consumo_cpa: 9.99
+  importe_vta: 9.99
+  importe_cpa: 9.99
+  importe_mgn: 9.99

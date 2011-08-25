@@ -1,0 +1,45 @@
+<h1>Listing margenops</h1>
+
+<table>
+  <tr>
+    <th>Version</th>
+    <th>Empresa</th>
+    <th>Tarifa</th>
+    <th>Periodo</th>
+    <th>Estado</th>
+    <th>Concepto</th>
+    <th>Cantidad</th>
+    <th>Consumo vta</th>
+    <th>Consumo cpa</th>
+    <th>Importe vta</th>
+    <th>Importe cpa</th>
+    <th>Importe mgn</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @margenops.each do |margenop| %>
+  <tr>
+    <td><%= margenop.version %></td>
+    <td><%= margenop.empresa %></td>
+    <td><%= margenop.tarifa %></td>
+    <td><%= margenop.periodo %></td>
+    <td><%= margenop.estado %></td>
+    <td><%= margenop.concepto %></td>
+    <td><%= margenop.cantidad %></td>
+    <td><%= margenop.consumo_vta %></td>
+    <td><%= margenop.consumo_cpa %></td>
+    <td><%= margenop.importe_vta %></td>
+    <td><%= margenop.importe_cpa %></td>
+    <td><%= margenop.importe_mgn %></td>
+    <td><%= link_to 'Show', margenop %></td>
+    <td><%= link_to 'Edit', edit_margenop_path(margenop) %></td>
+    <td><%= link_to 'Destroy', margenop, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Margenop', new_margenop_path %>
