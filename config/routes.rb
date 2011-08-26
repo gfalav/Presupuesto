@@ -1,4 +1,6 @@
 Presupuesto::Application.routes.draw do
+  resources :premisas
+
   get "presmargen/index"
 
   get "presmargen/procesa"

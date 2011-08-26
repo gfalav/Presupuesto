@@ -1,0 +1,31 @@
+<h1>Listing premisas</h1>
+
+<table>
+  <tr>
+    <th>Empresa</th>
+    <th>Version</th>
+    <th>Nombre</th>
+    <th>Periodo</th>
+    <th>Valor</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @premisas.each do |premisa| %>
+  <tr>
+    <td><%= premisa.empresa %></td>
+    <td><%= premisa.version %></td>
+    <td><%= premisa.nombre %></td>
+    <td><%= premisa.periodo %></td>
+    <td><%= premisa.valor %></td>
+    <td><%= link_to 'Show', premisa %></td>
+    <td><%= link_to 'Edit', edit_premisa_path(premisa) %></td>
+    <td><%= link_to 'Destroy', premisa, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Premisa', new_premisa_path %>

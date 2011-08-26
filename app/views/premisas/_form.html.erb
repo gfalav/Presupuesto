@@ -1,0 +1,37 @@
+<%= form_for(@premisa) do |f| %>
+  <% if @premisa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@premisa.errors.count, "error") %> prohibited this premisa from being saved:</h2>
+
+      <ul>
+      <% @premisa.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Empresa %><br />
+    <%= f.text_field :empresa %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br />
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :periodo %><br />
+    <%= f.text_field :periodo %>
+  </div>
+  <div class="field">
+    <%= f.label :valor %><br />
+    <%= f.text_field :valor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

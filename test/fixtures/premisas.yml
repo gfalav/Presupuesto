@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre: MyString
+  periodo: 1
+  valor: 9.99
+
+two:
+  nombre: MyString
+  periodo: 1
+  valor: 9.99

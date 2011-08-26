@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Empresa:</b>
+  <%= @premisa.empresa %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @premisa.version %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @premisa.nombre %>
+</p>
+
+<p>
+  <b>Periodo:</b>
+  <%= @premisa.periodo %>
+</p>
+
+<p>
+  <b>Valor:</b>
+  <%= @premisa.valor %>
+</p>
+
+
+<%= link_to 'Edit', edit_premisa_path(@premisa) %> |
+<%= link_to 'Back', premisas_path %>

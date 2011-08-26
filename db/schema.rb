@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110825135501) do
+ActiveRecord::Schema.define(:version => 20110825175436) do
 
   create_table "margenops", :force => true do |t|
     t.integer  "version"
@@ -26,6 +26,16 @@ ActiveRecord::Schema.define(:version => 20110825135501) do
     t.decimal  "importe_vta"
     t.decimal  "importe_cpa"
     t.decimal  "importe_mgn"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "premisas", :force => true do |t|
+    t.string   "empresa"
+    t.integer  "version"
+    t.string   "nombre"
+    t.integer  "periodo"
+    t.decimal  "valor"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
